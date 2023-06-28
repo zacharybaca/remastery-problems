@@ -32,3 +32,13 @@ function myFilter(array, cb) {
     return newArr;
 }
 ```
+# Problem 4
+```
+function appleCounter(appleObj) {
+  // Your code here
+  let objKeys = Object.keys(appleObj);
+  let counter = 0;
+  let keyWords = objKeys.join(" ");
+ 
+}
+```
