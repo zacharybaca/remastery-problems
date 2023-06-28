@@ -38,10 +38,12 @@ function appleCounter(appleObj) {
   // Your code here
   let objKeys = Object.keys(appleObj);
   let counter = 0;
-  let keyWords = objKeys.join(" ");
   
-  if (keyWords.indexOf("apple") !== -1) {
-      counter++;
+  for (let i = 0; i < objKeys.length; i++) {
+      let key = objKeys[i];
+      if (key.indexOf("apple") !== -1) {
+          counter++;
+      }
   }
   return counter;
 }
