@@ -30,11 +30,15 @@ appleCounter(obj3); // => 3
 
 function appleCounter(appleObj) {
   // Your code here
+  //Set variable equal to array of keys in appleObj
   let objKeys = Object.keys(appleObj);
+  //Initialize counter variable to count number of times "apple" is in key
   let counter = 0;
 
   for (let i = 0; i < objKeys.length; i++) {
+    //Store each key element in variable, and convert to lowercase
       let key = objKeys[i].toLowerCase();
+      //If key contains a sequential stream of characters of "apple", increment counter variable
       if (key.indexOf("apple") !== -1) {
           counter++;
       }
