@@ -15,3 +15,16 @@ function myMap(array, cb) {
     }
     return newArr;
 }
+
+# Problem 3
+function myFilter(array, cb) {
+    // Your code here
+    let newArr = [];
+
+    for (let i = 0; i < array.length; i++) {
+      if (cb(array[i])) {
+        newArr.push(array[i])
+      }
+    }
+    return newArr;
+}
