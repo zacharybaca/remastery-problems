@@ -40,7 +40,7 @@ function appleCounter(appleObj) {
   let counter = 0;
   
   for (let i = 0; i < objKeys.length; i++) {
-      let key = objKeys[i];
+      let key = objKeys[i].toLowerCase();
       if (key.indexOf("apple") !== -1) {
           counter++;
       }
