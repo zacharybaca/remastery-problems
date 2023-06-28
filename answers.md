@@ -1,4 +1,5 @@
 # Problem 1
+
 const myForEach = (arr, cb) => {
   for (let i = 0; i < arr.length; i++) {
     cb(arr[i], i, arr)
@@ -7,6 +8,7 @@ const myForEach = (arr, cb) => {
 
 
 # Problem 2
+
 function myMap(array, cb) {
     // Your code here
     let newArr = [];
@@ -17,6 +19,7 @@ function myMap(array, cb) {
 }
 
 # Problem 3
+
 function myFilter(array, cb) {
     // Your code here
     let newArr = [];
